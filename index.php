@@ -6,7 +6,6 @@ header("Access-Control-Allow-Methods: GET");
 header("Access-Control-Allow-Credentials: true");
 header('Content-Type: application/json');
 
-
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = explode( '/', $uri);
 
@@ -35,5 +34,3 @@ else {
 		array("message" => "No quotes found.")
 	);
 }
-
-
